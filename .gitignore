@@ -1,0 +1,8 @@
+.vs/
+AzureNetIsolatedFunctionMockTools/bin/Release/AzureNetIsolatedFunctionMockTools.0.1.0.nupkg
+AzureNetIsolatedFunctionMockTools/bin/Release/net8.0/AzureNetIsolatedFunctionMockTools.deps.json
+AzureNetIsolatedFunctionMockTools/bin/
+AzureNetIsolatedFunctionMockTools/obj/
+AzureNetIsolatedFunctionMockTools/Properties/
+AzureNetIsolatedFunctionMockToolsTests/bin/
+AzureNetIsolatedFunctionMockToolsTests/
