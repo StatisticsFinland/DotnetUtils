@@ -31,7 +31,7 @@ smallerOrEqual() {
 
 fail_pipeline=false
 
-if ! git diff --quiet origin/dev HEAD DotnetUtils; then
+if ! git diff --quiet origin/dev HEAD AzureNetIsolatedFunctionMockTools; then
     if smallerOrEqual $versionNumber $versionInDev
 	then
         echo "Backend version number needs to be updated."
