@@ -1,4 +1,4 @@
-name: DotNetTools CI
+name: DotNetUtils CI
 
 run-name: CI for PR ${{ github.event.pull_request.number }}
 
@@ -9,6 +9,7 @@ on:
       - 'test/**'
       - 'master'
       - 'main'
+  workflow_dispatch:
 
 jobs:
   build:

@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\CD.yml = .github\workflows\CD.yml
 		.github\workflows\CI.yml = .github\workflows\CI.yml
-		SonarScan.yml = SonarScan.yml
+		.github\workflows\SonarScan.yml = .github\workflows\SonarScan.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureNetIsolatedFunctionMockToolsTests", "AzureNetIsolatedFunctionMockToolsTests\AzureNetIsolatedFunctionMockToolsTests.csproj", "{16B8C3B3-53BE-4EAB-AB73-A174CBC6850E}"
