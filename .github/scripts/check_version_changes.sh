@@ -1,9 +1,9 @@
 #!/bin/bash
-versionNumber=$(grep '<VersionPrefix>' ./DotNetTools/AzureNetIsolatedFunctionMockTools.csproj | grep -o "[0-9]*\.[0-9]*\.[0-9]*")
+versionNumber=$(grep '<VersionPrefix>' ./DotNetUtils/AzureNetIsolatedFunctionMockTools.csproj | grep -o "[0-9]*\.[0-9]*\.[0-9]*")
 
 git fetch origin dev --quiet
 
-versionInDev=$(git show origin/dev:DotNetTools/AzureNetIsolatedFunctionMockTools.csproj | grep '<VersionPrefix>' | grep -o "[0-9]*\.[0-9]*\.[0-9]*")
+versionInDev=$(git show origin/dev:DotNetUtils/AzureNetIsolatedFunctionMockTools.csproj | grep '<VersionPrefix>' | grep -o "[0-9]*\.[0-9]*\.[0-9]*")
 
 echo "Version: This branch $versionNumber, dev branch $versionInDev"
 
@@ -31,7 +31,7 @@ smallerOrEqual() {
 
 fail_pipeline=false
 
-if ! git diff --quiet origin/dev HEAD DotNetTools; then
+if ! git diff --quiet origin/dev HEAD DotNetUtils; then
     if smallerOrEqual $versionNumber $versionInDev
 	then
         echo "Backend version number needs to be updated."
