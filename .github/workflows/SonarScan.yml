@@ -1,4 +1,4 @@
-name: DotNetTools SonarScan
+name: DotnetUtils SonarScan
 
 run-name: SonarScan for PR ${{ github.event.pull_request.number }}
 
@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - 'dev'
+  workflow_dispatch:
 
 jobs:
  sonar:
@@ -38,7 +39,7 @@ jobs:
         run: dotnet tool install -g dotnet-sonarscanner
 
       - name: Begin SonarScanner
-        run: dotnet sonarscanner begin /k:StatisticsFinland_DotNetTools
+        run: dotnet sonarscanner begin /k:StatisticsFinland_DotnetUtils
             /o:StatisticsFinland
             /d:sonar.host.url=https://sonarcloud.io
             /d:sonar.token=${{ secrets.SONAR_TOKEN }}

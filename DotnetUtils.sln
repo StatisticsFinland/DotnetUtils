@@ -16,18 +16,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\CD.yml = .github\workflows\CD.yml
 		.github\workflows\CI.yml = .github\workflows\CI.yml
-		SonarScan.yml = SonarScan.yml
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureNetIsolatedFunctionMockToolsTests", "AzureNetIsolatedFunctionMockToolsTests\AzureNetIsolatedFunctionMockToolsTests.csproj", "{16B8C3B3-53BE-4EAB-AB73-A174CBC6850E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E97921B9-718B-43B5-99FC-466D0D24DDB6} = {E97921B9-718B-43B5-99FC-466D0D24DDB6}
+		.github\workflows\SonarScan.yml = .github\workflows\SonarScan.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{8F7F2721-0B9A-4173-8DBA-118FBA0459FB}"
 	ProjectSection(SolutionItems) = preProject
 		.github\scripts\check_version_changes.sh = .github\scripts\check_version_changes.sh
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureNetIsolatedFunctionMockToolsTests", "AzureNetIsolatedFunctionMockToolsTests\AzureNetIsolatedFunctionMockToolsTests.csproj", "{42211C13-AF40-5D95-6292-2EAF0EFA76EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +36,10 @@ Global
 		{E97921B9-718B-43B5-99FC-466D0D24DDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E97921B9-718B-43B5-99FC-466D0D24DDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E97921B9-718B-43B5-99FC-466D0D24DDB6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16B8C3B3-53BE-4EAB-AB73-A174CBC6850E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16B8C3B3-53BE-4EAB-AB73-A174CBC6850E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16B8C3B3-53BE-4EAB-AB73-A174CBC6850E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16B8C3B3-53BE-4EAB-AB73-A174CBC6850E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42211C13-AF40-5D95-6292-2EAF0EFA76EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42211C13-AF40-5D95-6292-2EAF0EFA76EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42211C13-AF40-5D95-6292-2EAF0EFA76EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42211C13-AF40-5D95-6292-2EAF0EFA76EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
