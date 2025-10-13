@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	<Title>Azure .NET Isolated Function Mock Tools</Title>
 	<IsPackable>true</IsPackable>
-	<VersionPrefix>1.0.0</VersionPrefix>
+	<VersionPrefix>1.1.0</VersionPrefix>
     <Authors>StatisticsFinland</Authors>
     <Company>StatisticsFinland</Company>
     <Description>Tools for mocking Azure .NET Isolated functions.</Description>
